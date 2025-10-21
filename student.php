@@ -18,7 +18,7 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
       <a href="index.php" class="navbar-brand">
         <i class="bi bi-arrow-left"></i> Volver
       </a>
-      <span class="navbar-brand mb-0 h1">Gestión de Alumnos</span>
+      <span class="navbar-brand mb-0 h1">Administracion de estudiantes</span>
     </div>
   </nav>
 
