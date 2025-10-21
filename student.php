@@ -1,5 +1,5 @@
 <?php
-include("connection.php"); // Asegúrate de que connection.php NO haga echo de texto
+include("connection.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -12,7 +12,6 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
 </head>
 <body class="bg-light">
 
-  <!-- Encabezado -->
   <nav class="navbar navbar-dark bg-dark mb-4">
     <div class="container-fluid">
       <a href="index.php" class="navbar-brand">
@@ -24,7 +23,6 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
 
   <div class="container">
 
-    <!-- Mensajes (opcional) -->
     <?php if (isset($_GET['msg'])): ?>
       <?php
         $msg = $_GET['msg'];
@@ -40,13 +38,26 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
       </div>
     <?php endif; ?>
 
-    <!-- Botón para abrir modal de agregar -->
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h4>Lista de Alumnos</h4>
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAlumno">+ Agregar Alumno</button>
+      <div>
+        <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#modalAlumno">+ Agregar Alumno</button>
+      </div>
     </div>
 
-    <!-- Tabla de alumnos (dinámica) -->
+    <!-- Barra de búsqueda -->
+    <div class="row mb-3">
+      <div class="col-md-8">
+        <input id="filtroAlumnos" class="form-control" placeholder="Buscar por nombre, DNI, teléfono o plan...">
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-2">
+          <button id="btnBuscar" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
+          <button id="btnLimpiar" class="btn btn-outline-secondary"><i class="bi bi-x-circle"></i> Limpiar</button>
+        </div>
+      </div>
+    </div>
+
     <div class="card shadow-sm">
       <div class="card-body">
         <table class="table table-striped table-hover">
@@ -59,7 +70,7 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
               <th>Acciones</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tablaAlumnosBody">
             <?php
               $sql = "SELECT s.id, s.first_name, s.last_name_father, s.last_name_mother, 
                               s.dni, s.phone_number, s.modality_id, m.name AS plan
@@ -107,7 +118,6 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
       </div>
     </div>
 
-    <!-- Modal: Formulario para registrar alumno -->
     <div class="modal fade" id="modalAlumno" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <form class="modal-content" method="POST" action="student_add.php" novalidate>
@@ -164,6 +174,8 @@ include("connection.php"); // Asegúrate de que connection.php NO haga echo de t
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src = "js/search.js"></script>
 </body>
 </html>
 
