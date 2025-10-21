@@ -6,7 +6,7 @@ include("connection.php");
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión de Alumnos - Academia de Marinera</title>
+  <title>Gestión de Alumnos | Academia de Marinera</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@ include("connection.php");
       <a href="index.php" class="navbar-brand">
         <i class="bi bi-arrow-left"></i> Volver
       </a>
-      <span class="navbar-brand mb-0 h1">Administracion de estudiantes</span>
+      <span class="navbar-brand mb-0 h1">Gestión de estudiantes</span>
     </div>
   </nav>
 
@@ -39,7 +39,7 @@ include("connection.php");
     <?php endif; ?>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
-      <h4>Lista de Alumnos</h4>
+      <h4>Listado general de estudiantes</h4>
       <div>
         <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#modalAlumno">+ Agregar Alumno</button>
       </div>
@@ -122,7 +122,7 @@ include("connection.php");
       <div class="modal-dialog">
         <form class="modal-content" method="POST" action="student_add.php" novalidate>
           <div class="modal-header">
-            <h5 class="modal-title">Registrar Alumno</h5>
+            <h5 class="modal-title">Nuevo registro de alumno</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
