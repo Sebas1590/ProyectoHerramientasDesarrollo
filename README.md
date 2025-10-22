@@ -54,6 +54,7 @@ DOCUMENTACION DE CONFLICTO
 
 2. Se acepta el cambio actual
 
+<img width="709" height="73" alt="image" src="https://github.com/user-attachments/assets/1bbeb4e6-0848-42cc-96aa-08139a81f5c2" />
 
 
 3. Se acepta el cambio entrante
@@ -61,7 +62,8 @@ DOCUMENTACION DE CONFLICTO
 
 
 4. Se acepta el cambio entrante
-   
+   <img width="709" height="78" alt="image" src="https://github.com/user-attachments/assets/2075888f-c07a-40c2-bbb6-37d5294afbc8" />
+
 
 5. Se acepta el cambio entrante
    El conflicto se resolvió manteniendo los cambios de la rama feature/mejoras-interfaz, los cuales actualizaban los textos y mejoraban la presentación visual.
