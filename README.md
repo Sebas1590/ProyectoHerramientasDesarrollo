@@ -42,14 +42,52 @@ Esta estructura refleja un sistema web que gestiona estudiantes y pagos, con una
 2. Una vez listas, se integran en `developer` mediante **merge**.  
 3. Desde `developer`, se puede preparar la integración hacia `main` (producción).
 
-Ejemplo:
-```bash
-# Estar en developer
-git checkout developer
 
-# Traer cambios de una rama feature
-git merge feature-pagos
-git merge feature-recibo
+---
 
-# Subir cambios
-git push origin developer
+
+DOCUMENTACION DE CONFLICTO
+
+1. Conflicto: Durante la fusión entre las ramas main y feature/mejoras-interfaz, surgieron conflictos en el archivo student.php. Ambas ramas modificaron las mismas secciones del código HTML —principalmente los títulos y textos de la interfaz—, como el nombre del panel, el título de la lista de alumnos y el encabezado del registro de alumnos.
+
+<img width="709" height="192" alt="image" src="https://github.com/user-attachments/assets/fa167a57-12eb-4f53-b964-198b52725b5a" />
+
+2. Se acepta el cambio actual
+
+
+
+3. Se acepta el cambio entrante
+   <img width="709" height="83" alt="image" src="https://github.com/user-attachments/assets/866e81ee-1219-4ac2-99f0-00ed6d6c9fa7" />
+
+
+4. Se acepta el cambio entrante
+   
+
+5. Se acepta el cambio entrante
+   El conflicto se resolvió manteniendo los cambios de la rama feature/mejoras-interfaz, los cuales actualizaban los textos y mejoraban la presentación visual.
+ <img width="709" height="78" alt="image" src="https://github.com/user-attachments/assets/445dd6a5-87f2-432a-9044-b332f699d6a7" />
+
+
+6. Se guardan cambios
+
+<img width="709" height="73" alt="image" src="https://github.com/user-attachments/assets/ca5d4eee-2f04-4b7a-8fd8-e181995a419a" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
