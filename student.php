@@ -17,7 +17,7 @@ include("connection.php");
       <a href="index.php" class="navbar-brand">
         <i class="bi bi-arrow-left"></i> Volver
       </a>
-      <span class="navbar-brand mb-0 h1">Panel de estudiantes</span>
+      <span class="navbar-brand mb-0 h1">Administración de Alumnos</span>
     </div>
   </nav>
 
