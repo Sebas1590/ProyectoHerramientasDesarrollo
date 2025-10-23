@@ -76,9 +76,11 @@ DOCUMENTACION DE CONFLICTO
 
 
 
+Diagrama de gantt:
 
 
 
+![WhatsApp Image 2025-10-22 at 5 02 08 PM](https://github.com/user-attachments/assets/43c7c846-78bd-403f-a6bf-8deec0354a5c)
 
 
 
