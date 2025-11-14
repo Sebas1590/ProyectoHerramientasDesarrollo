@@ -1,7 +1,6 @@
 <?php
-require_once "functions.php"   // ❌ ERROR 1: Falta punto y coma
+require_once "functions.php";
 
-// Ejecutar procedimiento almacenado (corregido)
 $conn->query("CALL UpdateExpiredPayments()");
 
 // Llamadas correctas
