@@ -1,0 +1,28 @@
+{
+  "name": "proyecto_final_hd",
+  "version": "1.0.0",
+  "description": "\"# ProyectoHerramientasDesarrollo\" \r Este proyecto tiene como objetivo poner en práctica el uso de **Git y GitHub** para la gestión de versiones, ramas, commits y fusiones entre entornos de desarrollo.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky",
+    "lint": "eslint . --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebas1590/ProyectoHerramientasDesarrollo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebas1590/ProyectoHerramientasDesarrollo/issues"
+  },
+  "homepage": "https://github.com/Sebas1590/ProyectoHerramientasDesarrollo#readme",
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0"
+  }
+}
