@@ -1,12 +1,11 @@
 <?php
-require_once "functions.php"
+require_once "functions.php"   // ❌ ERROR 1: Falta punto y coma
 
-// Falta punto y coma ↑
+// Ejecutar procedimiento almacenado (corregido)
+$conn->query("CALL UpdateExpiredPayments()");
 
-// Ejecutar el procedimiento almacenado para actualizar vencidos
-$conn->query("CALL UpdateExpiredPayments(")  // Paréntesis sin cerrar
-
-$result = getPagos($conn)
+// Llamadas correctas
+$result = getPagos($conn);
 $resumen = getResumen($conn);
 ?>
 <!DOCTYPE html>
@@ -28,20 +27,28 @@ $resumen = getResumen($conn);
           <th>Plan / Servicio</th>
           <th>Fecha Emisión</th>
           <th>Estado</th>
+        </tr>
       </thead>
       <tbody>
         <?php if ($result && $result->num_rows > 0) { ?>
-          <?php while($row = $result->fetch_assoc() { ?>  <!-- Falta cerrar paréntesis -->
+          
+          <?php while ($row = $result->fetch_assoc() { ?>   <!-- ❌ ERROR 2: Falta cerrar el paréntesis del while -->
+
             <tr>
-              <td><?php echo $row['alumno']; ?></td>
-              <td><?php echo $row['plan']; ?></td>
-              <td><?php echo $row['issue_date']; ?></td>
-              <td><?php echo $row['estado']; ?></td>
-          <?php } else: ?> <!-- else incorrecto para estructura PHP -->
-            <tr><td colspan="4">No hay registros.</td></tr>
-        <?php } ?> <!-- Cierre fuera de lugar -->
+              <td><?= $row['alumno']; ?></td>
+              <td><?= $row['plan']; ?></td>
+              <td><?= $row['issue_date']; ?></td>
+              <td><?= $row['estado']; ?></td>
+            </tr>
+
+          <?php } ?>
+
+        <?php } else { ?>
+          <tr><td colspan="4">No hay registros.</td></tr>
+        <?php } ?>
       </tbody>
     </table>
 </body>
 </html>
-<?php $conn->close() ?>
+
+<?php $conn->close(); ?>
