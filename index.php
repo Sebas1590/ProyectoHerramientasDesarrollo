@@ -3,7 +3,6 @@ require_once "functions.php";
 
 $conn->query("CALL UpdateExpiredPayments()");
 
-// Llamadas correctas
 $result = getPagos($conn);
 $resumen = getResumen($conn);
 ?>
@@ -31,7 +30,7 @@ $resumen = getResumen($conn);
       <tbody>
         <?php if ($result && $result->num_rows > 0) { ?>
           
-          <?php while ($row = $result->fetch_assoc() { ?>   <!-- ❌ ERROR 2: Falta cerrar el paréntesis del while -->
+          <?php while ($row = $result->fetch_assoc() { ?> 
 
             <tr>
               <td><?= $row['alumno']; ?></td>
