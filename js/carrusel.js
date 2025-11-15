@@ -1,6 +1,6 @@
 const items = document.querySelectorAll(".carrusel-item");
 const prevBtn = document.querySelector(".prev");
-       const nextBtn = document.querySelector(".next");
+const nextBtn = document.querySelector(".next");
 let index = 0;
 
 export function mostrarItemDOM(n, elementos = items) {
