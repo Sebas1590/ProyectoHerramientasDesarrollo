@@ -17,7 +17,7 @@ $resumen = getResumen($conn);
 <body>
 
   <div class="container">
-    <h1>Sistema de pagos</h1>
+    <h1>sistema de pagos</h1>
     <table class="table">
       <thead>
         <tr>
