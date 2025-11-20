@@ -17,7 +17,7 @@ $resumen = getResumen($conn);
 <body>
 
   <div class="container">
-    <h1>Sistema de pagos</h1>
+    <h1>sistema de pagos</h1>
     <table class="table">
       <thead>
         <tr>
@@ -30,7 +30,7 @@ $resumen = getResumen($conn);
       <tbody>
         <?php if ($result && $result->num_rows > 0) { ?>
           
-          <?php while ($row = $result->fetch_assoc() { ?> 
+          <?php while ($row = $result->fetch_assoc()) { ?> 
 
             <tr>
               <td><?= $row['alumno']; ?></td>
