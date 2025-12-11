@@ -85,6 +85,25 @@ Diagrama de gantt:
 
 
 
+Despliegue en la nube
+
+Plataforma usada : INFINITYFREE
+<img width="1893" height="600" alt="image" src="https://github.com/user-attachments/assets/27e0ea1b-bde0-4737-8a73-d77f10dbbdfd" />
+
+
+NUESTRO PANEL ES EL SIGUIENTE
+
+<img width="1376" height="899" alt="image" src="https://github.com/user-attachments/assets/7cddb3db-d598-4f78-98ed-c437ce41d43e" />
+
+Nuestra pagina tiene el siguiente dominio: vaitaregistro.great-site.net
+
+<img width="1594" height="664" alt="image" src="https://github.com/user-attachments/assets/e98c59ab-8434-4930-870f-e4a3b9370cf2" />
+
+
+
+
+
+
 
 
 
